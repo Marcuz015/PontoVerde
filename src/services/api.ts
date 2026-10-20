@@ -26,3 +26,8 @@ export async function getPoint(id: string): Promise<DisposalPoint> {
     throw new Error("Este ponto não foi encontrado no catálogo publicado.");
   return point;
 }
+
+
+
+
+
