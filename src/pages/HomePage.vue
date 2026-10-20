@@ -148,7 +148,7 @@ const { categories } = useCatalog();
         </div>
         <SearchBox />
         <div class="search-shortcuts">
-          <span>Mais buscados</span
+          <span>Acesso rápido</span
           ><RouterLink
             v-for="c in categories.slice(0, 4)"
             :key="c.slug"
