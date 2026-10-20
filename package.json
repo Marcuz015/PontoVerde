@@ -1,0 +1,38 @@
+{
+  "name": "ponto-verde",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "npm run check:data && vue-tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check:data": "node scripts/check-catalog.mjs",
+    "format": "prettier --write src shared tests scripts *.json *.ts *.html README.md docs"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "5.3.0",
+    "@lucide/vue": "1.60.0",
+    "leaflet": "1.9.4",
+    "qrcode": "1.5.4",
+    "vue": "3.5.44",
+    "vue-router": "5.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "@types/leaflet": "1.9.22",
+    "@types/qrcode": "1.5.6",
+    "@vitejs/plugin-vue": "6.0.10",
+    "prettier": "3.9.10",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3",
+    "vite": "8.3.4",
+    "vitest": "5.0.5",
+    "vue-tsc": "3.3.13"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

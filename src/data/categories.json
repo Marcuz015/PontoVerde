@@ -1,0 +1,335 @@
+[
+  {
+    "id": "11111111-1111-4111-8111-111111111101",
+    "name": "Eletrônicos",
+    "slug": "eletronicos",
+    "icon": "Monitor",
+    "active": true,
+    "description": "Aparelhos elétricos e eletrônicos que chegaram ao fim de sua vida útil.",
+    "disposal_instructions": {
+      "examples": [
+        "Celulares e computadores",
+        "Cabos e carregadores",
+        "Pequenos eletrodomésticos"
+      ],
+      "prepare": [
+        "Faça uma cópia dos seus arquivos, apague os dados e retire chips e cartões.",
+        "Mantenha o equipamento inteiro. Confirme o porte aceito pelo ponto."
+      ],
+      "avoid": [
+        "Não desmonte aparelhos nem retire baterias internas.",
+        "Não coloque no lixo comum."
+      ],
+      "impact": "A destinação especializada permite recuperar materiais e evitar contaminação.",
+      "sources": [
+        {
+          "title": "Green Eletron · orientações ao consumidor",
+          "url": "https://greeneletron.org.br/perguntas-frequentes/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111102",
+    "name": "Pilhas e baterias",
+    "slug": "pilhas-baterias",
+    "icon": "BatteryMedium",
+    "active": true,
+    "description": "Pilhas usadas e baterias portáteis exigem uma cadeia de recebimento específica.",
+    "disposal_instructions": {
+      "examples": [
+        "Pilhas alcalinas",
+        "Pilhas recarregáveis",
+        "Baterias portáteis, conforme o programa"
+      ],
+      "prepare": [
+        "Guarde em local seco, protegido do calor e do alcance de crianças.",
+        "Consulte o programa sobre o tipo de bateria. Baterias automotivas têm uma cadeia própria."
+      ],
+      "avoid": [
+        "Não abra, perfure ou queime baterias.",
+        "Não remova baterias internas. Para baterias soltas de lítio ou danificadas, peça orientação especializada antes de transportar."
+      ],
+      "impact": "O descarte inadequado pode liberar substâncias contaminantes e oferecer risco de incêndio.",
+      "sources": [
+        {
+          "title": "Green Eletron · pilhas e baterias",
+          "url": "https://greeneletron.org.br/perguntas-frequentes/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111103",
+    "name": "Óleo de cozinha",
+    "slug": "oleo-cozinha",
+    "icon": "Droplets",
+    "active": true,
+    "description": "Óleo vegetal usado em frituras, separado de outros líquidos.",
+    "disposal_instructions": {
+      "examples": [
+        "Óleo de soja usado",
+        "Óleo de girassol usado",
+        "Outros óleos vegetais de fritura"
+      ],
+      "prepare": [
+        "Espere esfriar completamente.",
+        "Use um funil para transferir para uma garrafa plástica e feche bem. Leve a um ponto que confirme o recebimento."
+      ],
+      "avoid": [
+        "Não despeje na pia, no vaso sanitário ou no solo.",
+        "Não misture com óleo de motor ou produtos de limpeza."
+      ],
+      "impact": "A gordura pode entupir tubulações e prejudicar a qualidade da água.",
+      "sources": [
+        {
+          "title": "Sabesp · água e óleo não se misturam",
+          "url": "https://www.sabesp.com.br/assets/images/folhetos/sabesp-agua-oleo-nao-se-misturam.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111104",
+    "name": "Medicamentos",
+    "slug": "medicamentos",
+    "icon": "Pill",
+    "active": true,
+    "description": "Medicamentos de uso domiciliar vencidos ou que não serão mais utilizados.",
+    "disposal_instructions": {
+      "examples": [
+        "Comprimidos vencidos",
+        "Pomadas e xaropes em desuso",
+        "Embalagens com resíduos de medicamentos"
+      ],
+      "prepare": [
+        "Mantenha os resíduos em suas embalagens, fora do alcance de crianças.",
+        "Procure um coletor de logística reversa com recebimento confirmado. Consulte um farmacêutico sobre dúvidas e materiais especiais."
+      ],
+      "avoid": [
+        "Não jogue no lixo comum, na pia ou no vaso sanitário.",
+        "Não presuma que toda farmácia ou unidade de saúde recebe medicamentos. Agulhas e perfurocortantes exigem orientação própria."
+      ],
+      "impact": "O descarte inadequado pode contaminar o ambiente e favorecer o uso acidental.",
+      "sources": [
+        {
+          "title": "Ministério da Saúde · uso racional de medicamentos",
+          "url": "https://www.gov.br/saude/pt-br/composicao/sectics/daf/uso-racional-de-medicamentos/publicacoes/cartilha_promocao_uso_racional_medicamentos.pdf/@@download/file"
+        },
+        {
+          "title": "Decreto 10.388 · logística reversa domiciliar",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/d10388.htm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111105",
+    "name": "Papel e papelão",
+    "slug": "papel-papelao",
+    "icon": "Newspaper",
+    "active": true,
+    "description": "Papéis e embalagens de papelão que podem voltar à cadeia de reciclagem.",
+    "disposal_instructions": {
+      "examples": [
+        "Caixas de papelão",
+        "Jornais e revistas",
+        "Folhas de papel"
+      ],
+      "prepare": [
+        "Separe dos resíduos orgânicos e mantenha seco.",
+        "Dobre as caixas para ocupar menos espaço e confirme os materiais aceitos."
+      ],
+      "avoid": [
+        "Não misture papel higiênico e papel muito engordurado aos recicláveis."
+      ],
+      "impact": "Recuperar fibras reduz a necessidade de matéria-prima e o volume de rejeitos.",
+      "sources": [
+        {
+          "title": "Ministério do Meio Ambiente · reciclagem",
+          "url": "https://www.gov.br/mma/pt-br/assuntos/educacao-ambiental/glossario-ea/o-que-e-reciclagem"
+        }
+      ]
+    }
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111106",
+    "name": "Plásticos",
+    "slug": "plasticos",
+    "icon": "Milk",
+    "active": true,
+    "description": "Embalagens plásticas cuja reciclagem depende do material e do sistema local.",
+    "disposal_instructions": {
+      "examples": [
+        "Garrafas PET",
+        "Frascos de produtos domésticos",
+        "Potes e tampas"
+      ],
+      "prepare": [
+        "Retire sobras do conteúdo e separe do lixo orgânico.",
+        "Confirme o tipo de plástico recebido pelo ponto."
+      ],
+      "avoid": [
+        "Não presuma que todo plástico é aceito.",
+        "Embalagens de produtos perigosos exigem sistemas específicos."
+      ],
+      "impact": "A separação adequada facilita a recuperação dos polímeros e reduz resíduos no ambiente.",
+      "sources": [
+        {
+          "title": "Ministério do Meio Ambiente · reciclagem",
+          "url": "https://www.gov.br/mma/pt-br/assuntos/educacao-ambiental/glossario-ea/o-que-e-reciclagem"
+        }
+      ]
+    }
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111107",
+    "name": "Vidros",
+    "slug": "vidros",
+    "icon": "Wine",
+    "active": true,
+    "description": "Garrafas e potes de vidro, respeitando as regras do ponto de recebimento.",
+    "disposal_instructions": {
+      "examples": [
+        "Garrafas de bebidas",
+        "Potes de alimentos",
+        "Frascos de vidro"
+      ],
+      "prepare": [
+        "Retire resíduos do conteúdo.",
+        "Evite quebrar as embalagens e pergunte ao receptor como acondicionar vidro quebrado."
+      ],
+      "avoid": [
+        "Não misture lâmpadas, espelhos, cerâmica ou vidro de janela sem confirmação.",
+        "Não deixe cacos soltos em sacos de lixo."
+      ],
+      "impact": "A reciclagem recupera matéria-prima; a separação cuidadosa também previne acidentes.",
+      "sources": [
+        {
+          "title": "Ministério do Meio Ambiente · reciclagem",
+          "url": "https://www.gov.br/mma/pt-br/assuntos/educacao-ambiental/glossario-ea/o-que-e-reciclagem"
+        }
+      ]
+    }
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111108",
+    "name": "Metais",
+    "slug": "metais",
+    "icon": "Package",
+    "active": true,
+    "description": "Embalagens de aço, alumínio e outras peças aceitas pelo receptor.",
+    "disposal_instructions": {
+      "examples": [
+        "Latas de bebidas",
+        "Latas de alimentos",
+        "Tampas metálicas"
+      ],
+      "prepare": [
+        "Retire resíduos de alimentos.",
+        "Proteja bordas cortantes e confirme o recebimento de peças maiores."
+      ],
+      "avoid": [
+        "Não perfure recipientes pressurizados.",
+        "Latas com produtos perigosos não devem ser misturadas aos recicláveis comuns."
+      ],
+      "impact": "A recuperação dos metais reduz a necessidade de extração e mantém materiais em circulação.",
+      "sources": [
+        {
+          "title": "Ministério do Meio Ambiente · reciclagem",
+          "url": "https://www.gov.br/mma/pt-br/assuntos/educacao-ambiental/glossario-ea/o-que-e-reciclagem"
+        }
+      ]
+    }
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111109",
+    "name": "Lâmpadas",
+    "slug": "lampadas",
+    "icon": "Lightbulb",
+    "active": true,
+    "description": "Lâmpadas precisam de recebimento adequado ao seu tipo; fluorescentes podem conter mercúrio.",
+    "disposal_instructions": {
+      "examples": [
+        "Fluorescentes tubulares",
+        "Fluorescentes compactas",
+        "Outros tipos, somente com confirmação"
+      ],
+      "prepare": [
+        "Mantenha as lâmpadas inteiras, protegidas contra impacto.",
+        "Consulte o ponto sobre tipo, quantidade e condições de recebimento. LED tem regras diferentes das fluorescentes."
+      ],
+      "avoid": [
+        "Não quebre nem coloque junto ao vidro reciclável.",
+        "Para uma lâmpada já quebrada, procure orientação especializada antes de manusear."
+      ],
+      "impact": "A descontaminação adequada evita a liberação de mercúrio presente em alguns tipos.",
+      "sources": [
+        {
+          "title": "Reciclus · pontos e orientações",
+          "url": "https://reciclus.org.br/onde-descartar/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111110",
+    "name": "Pneus",
+    "slug": "pneus",
+    "icon": "CircleDot",
+    "active": true,
+    "description": "Pneus inservíveis devem seguir o sistema de logística reversa.",
+    "disposal_instructions": {
+      "examples": [
+        "Pneus de carros",
+        "Pneus de motos",
+        "Outros pneus aceitos pelo sistema"
+      ],
+      "prepare": [
+        "Armazene coberto para não acumular água.",
+        "Consulte o comerciante ou ponto especializado sobre o recebimento e seus limites."
+      ],
+      "avoid": [
+        "Não queime, abandone em terrenos ou descarte em rios.",
+        "Não presuma que um ecoponto recebe pneus."
+      ],
+      "impact": "O descarte irregular favorece acúmulo de água e a queima polui o ar.",
+      "sources": [
+        {
+          "title": "SINIR · logística reversa",
+          "url": "https://www.sinir.gov.br/perfis/logistica-reversa/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111111",
+    "name": "Móveis e entulho",
+    "slug": "moveis-entulho",
+    "icon": "Armchair",
+    "active": true,
+    "description": "Resíduos volumosos e pequenas quantidades de entulho doméstico, conforme regras municipais.",
+    "disposal_instructions": {
+      "examples": [
+        "Móveis sem possibilidade de reúso",
+        "Pequenas quantidades de entulho",
+        "Madeira, quando aceita pelo ponto"
+      ],
+      "prepare": [
+        "Avalie o conserto ou a doação de móveis em boas condições.",
+        "Confirme o limite de volume, a origem e os materiais aceitos antes de levar."
+      ],
+      "avoid": [
+        "Não deixe em calçadas ou na frente de ecopontos fechados.",
+        "Não misture amianto, químicos e outros resíduos perigosos ao entulho comum."
+      ],
+      "impact": "A entrega adequada reduz o descarte irregular e a obstrução de áreas públicas.",
+      "sources": [
+        {
+          "title": "Prefeitura de Itu · ecopontos e limites",
+          "url": "https://itu.sp.gov.br/operacao-cata-treco-atende-regiao-do-bairro-sao-judas-tadeu/"
+        }
+      ]
+    }
+  }
+]
