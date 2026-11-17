@@ -1526,7 +1526,7 @@ label {
     font-size: 1.05rem;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 1040px) {
   .desktop-nav,
   .header-cta {
     display: none;
@@ -1963,4 +1963,18 @@ label {
 /* Evita que o botão "voltar ao topo" cubra os links do rodapé. */
 .footer-bottom {
   padding-right: 64px;
+}
+@media (max-width: 560px) {
+  .locator-filters {
+    grid-template-columns: 1fr;
+  }
+  .filter-search {
+    grid-column: auto;
+  }
+}
+.site-footer:not(:has(.footer-cta)) {
+  padding-top: 56px;
+}
+.desktop-nav a {
+  white-space: nowrap;
 }

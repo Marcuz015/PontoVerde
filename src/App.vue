@@ -123,13 +123,13 @@ onBeforeUnmount(() => {
   <main id="conteudo" tabindex="-1">
     <RouterView v-slot="{ Component, route: r }">
       <Transition name="page" mode="out-in">
-        <div :key="r.matched[0]?.path ?? r.path" class="page"><component :is="Component" /></div>
+        <div v-if="Component" :key="r.matched[0]?.path ?? r.path" class="page"><component :is="Component" /></div>
       </Transition>
     </RouterView>
   </main>
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-cta" v-reveal>
+      <div v-if="!route.path.startsWith('/participar')" class="footer-cta" v-reveal>
         <div>
           <p class="eyebrow">FAÇA PARTE DO GUIA</p>
           <h2>Conhece um ponto de descarte que ainda não está aqui?</h2>
