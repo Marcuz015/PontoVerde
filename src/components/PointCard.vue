@@ -6,7 +6,7 @@ defineProps<{ point: DisposalPoint; selected?: boolean; distance?: number }>();
 defineEmits<{ select: [id: string] }>();
 </script>
 <template>
-  <article class="point-card" :class="{ selected }">
+  <article v-reveal class="point-card" :class="{ selected }">
     <div class="point-top">
       <span class="point-symbol"><Icon name="MapPin" :size="24" /></span
       ><span class="badge"

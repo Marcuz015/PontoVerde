@@ -36,6 +36,7 @@ const category = computed(() =>
         v-for="(c, i) in categories"
         :key="c.id"
         :to="`/como-descartar/${c.slug}`"
+        v-reveal="(i % 6) * 60"
         class="category-card"
         :class="`category-tone-${i % 3}`"
         ><span class="category-icon"><Icon :name="c.icon" :size="32" /></span>
