@@ -3,7 +3,7 @@ import Icon from "../components/Icon.vue";
 import SearchBox from "../components/SearchBox.vue";
 import { useCatalog } from "../composables/useCatalog";
 import { cities } from "../types";
-const { categories } = useCatalog();
+const { categories, points, loading } = useCatalog();
 </script>
 <template>
   <section class="home-hero">
@@ -29,9 +29,14 @@ const { categories } = useCatalog();
             Descartar corretamente ficou mais fácil. Encontre o lugar certo para
             seus resíduos e faça a diferença perto de você.
           </p>
-          <a href="#buscar" class="hero-anchor"
-            >Encontre seu ponto de partida <Icon name="ArrowRight" :size="18"
-          /></a>
+          <div class="hero-actions">
+            <a href="#buscar" class="button button-lime"
+              ><Icon name="Search" :size="18" /> Encontre seu ponto de
+              partida</a
+            ><RouterLink to="/como-descartar" class="button button-ghost"
+              >Como descartar <Icon name="ArrowRight" :size="18"
+            /></RouterLink>
+          </div>
         </div>
         <div
           class="hero-art"
@@ -160,12 +165,31 @@ const { categories } = useCatalog();
     </div>
   </section>
   <div class="trust-strip container">
-    <span><Icon name="ShieldCheck" /> Compromisso com fontes confiáveis</span
-    ><span><Icon name="MapPin" /> Informação perto de você</span
-    ><span><Icon name="Heart" /> Acesso gratuito e sem cadastro</span>
+    <span v-reveal
+      ><b><Icon name="Recycle" /></b
+      ><span
+        ><strong>{{ categories.length }}</strong> tipos de resíduo com
+        orientação</span
+      ></span
+    ><span v-reveal="80"
+      ><b><Icon name="MapPin" /></b
+      ><span
+        ><strong>{{ cities.length }}</strong> cidades · informação perto de
+        você</span
+      ></span
+    ><span v-reveal="160"
+      ><b><Icon name="ShieldCheck" /></b
+      ><span
+        ><strong>{{ loading && !points.length ? "…" : points.length }}</strong>
+        locais com fonte conferida</span
+      ></span
+    ><span v-reveal="240"
+      ><b><Icon name="Heart" /></b
+      ><span><strong>100%</strong> gratuito e sem cadastro</span></span
+    >
   </div>
   <section class="section container">
-    <div class="section-head">
+    <div class="section-head" v-reveal>
       <div>
         <p class="eyebrow">CADA MATERIAL TEM O SEU CAMINHO</p>
         <h2>Separe a dúvida.<br />Descarte do jeito certo.</h2>
@@ -184,6 +208,7 @@ const { categories } = useCatalog();
       <RouterLink
         v-for="(c, index) in categories.slice(0, 6)"
         :key="c.id"
+        v-reveal="index * 70"
         :to="`/como-descartar/${c.slug}`"
         class="category-card"
         :class="`category-tone-${index % 3}`"
@@ -197,7 +222,7 @@ const { categories } = useCatalog();
   </section>
   <section class="how-section">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head" v-reveal>
         <div>
           <p class="eyebrow">COMPLICADO É DEIXAR PARA DEPOIS</p>
           <h2>Três passos.<br />Uma boa atitude.</h2>
@@ -227,6 +252,7 @@ const { categories } = useCatalog();
             },
           ]"
           :key="step.title"
+          v-reveal="i * 120"
         >
           <div class="step-top">
             <span class="step-number">0{{ i + 1 }}</span
@@ -239,7 +265,7 @@ const { categories } = useCatalog();
     </div>
   </section>
   <section class="section container cities-section">
-    <div>
+    <div v-reveal>
       <p class="eyebrow">PERTINHO DE VOCÊ</p>
       <h2>O cuidado começa<br />na nossa região.</h2>
       <p>
@@ -250,7 +276,7 @@ const { categories } = useCatalog();
         >Explore o mapa <Icon name="ArrowUpRight" :size="17"
       /></RouterLink>
     </div>
-    <div class="city-list">
+    <div class="city-list" v-reveal="120">
       <RouterLink
         v-for="(city, i) in cities"
         :key="city"
@@ -262,7 +288,7 @@ const { categories } = useCatalog();
     </div>
   </section>
   <section class="container">
-    <div class="impact-banner">
+    <div class="impact-banner" v-reveal>
       <div class="impact-symbol">
         <Icon name="Sprout" :size="70" :stroke-width="1" />
       </div>
@@ -280,7 +306,7 @@ const { categories } = useCatalog();
     </div>
   </section>
   <section class="section container project-teaser">
-    <div>
+    <div v-reveal>
       <p class="eyebrow">CONHECIMENTO QUE SAI DA SALA DE AULA</p>
       <h2>Uma ideia da universidade.<br />Um convite à comunidade.</h2>
       <p>
@@ -291,7 +317,7 @@ const { categories } = useCatalog();
         >Nossa história <Icon name="ArrowUpRight" :size="18"
       /></RouterLink>
     </div>
-    <div class="project-stamp">
+    <div class="project-stamp" v-reveal="150">
       <span>APRENDER.</span><span>COMPARTILHAR.</span
       ><span class="green-text"
         >TRANSFORMAR.<Icon name="ArrowUpRight" :size="35"

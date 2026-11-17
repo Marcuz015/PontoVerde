@@ -37,19 +37,19 @@ import Icon from "../components/Icon.vue";
         devem ser generalizados para a população.
       </p>
       <div class="survey-grid">
-        <article>
+        <article v-reveal>
           <strong>15 de 15</strong>
           <p>já usaram o lixo comum por não saber onde levar resíduos.</p>
         </article>
-        <article>
+        <article v-reveal>
           <strong>13 de 15</strong>
           <p>usariam um site ou QR Code para encontrar pontos.</p>
         </article>
-        <article>
+        <article v-reveal>
           <strong>14 de 15</strong>
           <p>acreditam que a informação pode reduzir o descarte incorreto.</p>
         </article>
-        <article>
+        <article v-reveal>
           <strong>8 de 15</strong>
           <p>não conhecem ou não têm certeza sobre pontos próximos.</p>
         </article>
@@ -66,7 +66,7 @@ import Icon from "../components/Icon.vue";
       /></RouterLink>
     </div>
     <aside class="about-aside">
-      <div class="ods-card">
+      <div class="ods-card" v-reveal>
         <span class="ods-number">15</span
         ><Icon name="Sprout" :size="62" :stroke-width="1.2" />
         <h3>Vida terrestre</h3>
@@ -75,7 +75,7 @@ import Icon from "../components/Icon.vue";
           os ecossistemas terrestres.
         </p>
       </div>
-      <div class="ods-card secondary">
+      <div class="ods-card secondary" v-reveal="120">
         <span class="ods-number">12</span
         ><Icon name="Recycle" :size="48" :stroke-width="1.2" />
         <h3>Consumo e produção responsáveis</h3>
